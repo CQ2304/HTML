@@ -1,0 +1,104 @@
+<html>
+<head>Formulario 1</head>
+<title>Formulario</title>
+<body>
+	<h1><p style=color:Crimson>Datos generales</p></h1>
+	<form action="ejemplo.php" method="get">
+
+		<p>Nombre:
+			<input type="text" name="nombre" size="40">
+		</p>
+		<p>Año de Nacimiento:
+			<input type="number" name="nacido" min="1900">
+		</p>
+		<p>Sexo:
+			<input type="radio" name="hm" value="H">Hombre
+			<input type="radio" name="hm" value="M">Mujer
+		</p>
+		<p>e-mail:
+			<input type="e-mail" name="correo">
+		</p>
+		<p>Escribe la contraseña de tu email:
+			<input type="password" name="contraseña" minlength="8">
+		</p>
+		<p>Escribe un numero:
+			<input type="number" name="numero" step="any">
+		</p>
+		<p>Escribe tu numero telefonico:
+			<input type="number" name="numtel" maxlength="10" minlength="8">
+		</p>
+		<p>	Escribe un numero igual o mayor a 100:
+			<input type="number" name="numero" max="100">
+		</p>
+		<p>Coloca un multiplo de 10:
+			<input type="number" name="numero" step="10">
+		</p>
+		<p>Coloca un multiplo de 0.5:
+			<input type="number" name="numero" step="0.5">
+		</p>
+		<p>Fecha de nacimiento/Fecha:
+			<input type="date" name="fecha">
+		</p>
+		<p>Hora:
+			<input type="time" name="hora">
+		</p>
+		<p>Marca de refresco preferida:<br>
+			<input type="checkbox" name="casilla" value="Pepsi">Pepsi<br>
+			<input type="checkbox" name="casilla" value="Coca-Cola">Coca-Cola<br>
+			<input type="checkbox" name="casilla" value="Otro">Otro<br>
+		</p>
+		<p>Color preferido:
+			<input type="Color" name="colorpref" value="blue">
+		</p>
+		<p>Indique su promedio
+			<input type="range" name="rango" min="5" max="10" step="1">
+		</p>
+		<p>Cuadro de texto borrando el contenido:<br>
+			<textarea name="texto" rows="4" cols="40">Escriba algo</textarea>
+		</p>
+		<p>Cuadro de texto donde no es necesario borrar el contenido:<br>
+			<textarea name="texto" rows="4" cols="40" placeholder="Escriba algo"></textarea>
+		</p>
+		<p>Selecciona la materia de tu preferencia"
+			(el lenguaje te muestra la primera opcion):<br>
+			<select name="menu">
+				<option value="Diseño Digital">Diseño Digital</option>
+				<option value="Paginas Web">Paginas Web</option>
+				<option value="Otra">Otra</option>
+			</select>
+		</p>
+		<p>Selecciona la materia de tu preferencia"
+			(el lenguaje te muestra la  opcion que contenga selected):<br>
+			<select name="menu">
+				<option value="Diseño Digital">Diseño Digital</option>
+				<option value="Paginas Web">Paginas Web</option>
+				<option value="Otra"selected>Otra</option>
+			</select>
+		</p>
+			<p>Selecciona la meteria de tu preferencia"
+			(el lenguaje te indica que no se ha realizado la accion):<br>
+			<select name="menu">
+				<option value="No eleccion">-</option>
+				<option value="Diseño Digital">Diseño Digital</option>
+				<option value="Paginas Web">Paginas Web</option>
+				<option value="Otra"selected>Otra</option>
+			</select>
+		</p>
+				<p>Selecciona la materia de tu preferencia"style=color:Violet align="center"
+			(el lenguaje te muestra n opciones en la caja):<br>
+			<select name="menu" size="2">
+				<option value="No eleccion">-</option>
+				<option value="Diseño Digital">Diseño Digital</option>
+				<option value="Paginas Web">Paginas Web</option>
+				<option value="Otra"selected>Otra</option>
+			</select>
+		</p>
+
+		<p>
+			<input type="submit" value="Enviar">
+				<input type="Reset" value="Borrar">
+				</p>
+</form>
+</body>
+</html>
+
